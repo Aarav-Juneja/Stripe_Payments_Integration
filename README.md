@@ -1,6 +1,6 @@
 ## Submitted by Anurag Juneja
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Assumptions
 
@@ -12,12 +12,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Project files
 
-1. Download the project folder `Stripe_Payments_Integration` to your local machine. 
-2. Get your secret API key from your Stripe account and use in file server.js in the project.
+1. Download the project folder `Stripe_Payments_Integration` to your local machine.
+2. Get your secret API key from your Stripe account and create a `.env` file to store as `SECRET_KEY`
 3. Get your publishable API key from your Stripe account and use in file `src/App.js`.
 
 ## Install Stripe
-Install the required Stripe libraries on your machine. 
+Install the required Stripe libraries on your machine.
 
 1. Open a terminal window.
 2. Install the Stripe Node library

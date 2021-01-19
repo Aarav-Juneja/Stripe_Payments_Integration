@@ -1,7 +1,8 @@
+require("dotenv").config()
 const express = require("express");
 const app = express();
 // This is your real test secret API key.
-const stripe = require("stripe")("STRIPE SECRET API KEY");
+const stripe = require("stripe")(process.env.SECRET_KEY);
 
 app.use(express.static("."));
 app.use(express.json());
@@ -19,7 +20,7 @@ app.post("/create-payment-intent", async (req, res) => {
   const paymentIntent = await stripe.paymentIntents.create({
     amount: calculateOrderAmount(items),
     currency: "usd",
-    metadata: {integration_check: 'accept_a_payment'}
+    metadata: { integration_check: 'accept_a_payment' }
   });
 
   res.send({
