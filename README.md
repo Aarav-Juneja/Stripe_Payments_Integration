@@ -14,16 +14,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 1. Download the project folder `Stripe_Payments_Integration` to your local machine. 
 2. Get your secret API key from your Stripe account and use in file server.js in the project.
-3. Get your publishable API key from your Stripe account and use in file src/App.js.
+3. Get your publishable API key from your Stripe account and use in file `src/App.js`.
 
 ## Install Stripe
 Install the required Stripe libraries on your machine. 
 
 1. Open a terminal window.
 2. Install the Stripe Node library
-`npm install --save stripe`
-3. Add Stripe to your React app
-`npm install --save @stripe/react-stripe-js @stripe/stripe-js`
+`npm i stripe @stripe/react-stripe-js @stripe/stripe-js`
 
 ## Install Stripe CLI
 
@@ -43,7 +41,7 @@ Install the required Stripe libraries on your machine.
 
 1. Open a terminal window.
 2. Use the commad `cd` to navigate to the `Stripe_Payments_Integration` folder.
-3. Run `npm start`. If you don't have `yarn` installed, please install it and ensure that its in your profile so you can run it
+3. Run `npm start`. If you don't have `yarn` installed, make sure that you change `yarn` to `npm run ` in the `package.json` file.
 4. This will open a browser window with the payments field, ready to accept paymenTest paymentIntents
 
 ## Make a test payment
@@ -55,8 +53,5 @@ Payment is declined `4000 0000 0000 9995`
 
 ## Check Payments
 You can check the payment attempst two ways:
-1. Check your Stripe Dashboard `https://dashboard.stripe.com/test/payments`
-2. Check the log file output.log
-
-
-
+1. Check your [Stripe Dashboard](https://dashboard.stripe.com/test/payments)
+2. Check the log file `output.log`
